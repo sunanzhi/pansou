@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      network: host
     image: pansou:local
     container_name: pansou
     restart: unless-stopped
